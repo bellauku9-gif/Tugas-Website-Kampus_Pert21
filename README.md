@@ -1,2 +1,2 @@
-# Tugas-Website-Kampus_Pert21
-Menampilkan Website Layout Kampus Unpam
+# Projek-UAS-Isabella_Beauty_Skincare
+Menampilkan Sistem Aplikasi Penjualan dan Manajemen Toko Skincare Modern
