@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Barang Isabella Beauty'Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="agnes-kepala-web">
+        <div class="agnes-wadah-header">
+            <div class="agnes-nama-aplikasi" style="display: flex; align-items: center; gap: 10px;">
+                <img src="images/logo skincare.jpeg" alt="Logo Isabella Skincare" style="height: 45px; width: auto; border-radius: 50%; object-fit: cover;">
+                <span style="font-weight: bold;">Isabella Beauty'Skincare ✨</span>
+            </div>
+            <nav class="agnes-menu-navigasi">
+                <ul>
+                    <li><a href="index.html" class="agnes-tombol-navigasi">Beranda</a></li>
+                    <li><a href="transaksi.html" class="agnes-tombol-navigasi agnes-halaman-aktif">Transaksi</a></li>
+                    <li><a href="daftar transaksi.html" class="agnes-tombol-navigasi">Daftar Transaksi</a></li>
+                    <li><a href="profil.html" class="agnes-tombol-navigasi">Profil Aplikasi</a></li>
+                    <li><a href="login.html" class="agnes-tombol-navigasi">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="agnes-wadah-konten">
+        <section class="agnes-kartu-putih">
+            <h2>Input Transaksi Penjualan Skincare</h2>
+            <p>Gunakan formulir di bawah ini untuk mencatat data barang skincare yang dibeli oleh pelanggan.</p>
+            
+            <div id="kotakError"></div>
+            <form id="formTransaksi">
+                <div class="agnes-grup-isian">
+                    <label for="namaTrx">Nama Produk Skincare</label>
+                    <input type="text" id="namaTrx" class="agnes-kotak-input" placeholder="Contoh: Glowing Serum Centella">
+                </div>
+                
+                <div class="agnes-grup-isian">
+                    <label for="jumlahTrx">Jumlah Beli (Qty)</label>
+                    <input type="number" id="jumlahTrx" class="agnes-kotak-input" placeholder="Contoh: 2">
+                </div>
+
+                <div class="agnes-grup-isian">
+                    <label for="kategoriTrx">Kategori Produk</label>
+                    <select id="kategoriTrx" class="agnes-kotak-input">
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="Facial Care">Perawatan Wajah (Facial Care)</option>
+                        <option value="Body Care">Perawatan Tubuh (Body Care)</option>
+                        <option value="Sun Protection">Perlindungan Sinar UV (Sunscreen)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="agnes-tombol-pink">Simpan Transaksi Barang</button>
+            </form>
+
+            <hr style="border: 0; border-top: 2px dashed var(--pink-utama); margin: 30px 0;">
+
+            <h2>Lokasi Offline Store / Supplier Skincare</h2>
+            <p>Implementasi elemen Frame (inline frame) untuk memantau maps atau halaman eksternal supplier produk:</p>
+
+            <!-- Link Pengarah ke Halaman Daftar Transaksi sesuai tugas -->
+             <!-- Bagian Lokasi (JANGAN DIHAPUS, TINGGAL ISI KODE IFRAME INI) -->
+            <div style="margin-top: 15px; text-align: center;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.578332915842!2d106.6908351!3d-6.3189912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5309db8935b%3A0x633a6b579cd57fb9!2sJl.%20Raya%20Puspitek%2c%20Buaran%2c%20Kec.%20Serpong%2c%20Kota%20Tangerang%20Selatan%2c%20Banten%2015310!5e0!3m2!1sid!2sid!4v1719935000000!5m2!1sid!2sid"
+                    width="100%" 
+                    height="300" 
+                    style="border: 2px dashed #ffb7c5; border-radius: 12px; max-width: 760px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div style="margin-top: 15px; text-align: center;">
+                <a href="daftar transaksi.html" style="text-decoration: none; color: #b05b6f;" font-weight: bold; text-decoration: none; font-size: 14px; border-bottom: 1.5px solid var(--pink-utama, #b05b6f); padding-bottom: 2px;">
+                🔍 Lihat Daftar Transaksi →
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="agnes-kaki-web">
+        <p>Copyright &copy; 2026 &bull; Designed by Agnes Isabella Uku &bull; All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

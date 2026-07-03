@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Toko Isabella Beauty'Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Elemen Semantik: Header atas -->
+    <header class="agnes-kepala-web">
+        <div class="agnes-wadah-header">
+            <div class="agnes-nama-aplikasi" style="display: flex; align-items: center; gap: 10px;">
+                <img src="images/logo skincare.jpeg" alt="Logo Isabella Skincare" style="height: 45px; width: auto; border-radius: 50%; object-fit: cover;">
+                <span style="font-weight: bold;">Isabella Beauty'Skincare ✨</span>
+            </div>
+            <!-- Kriteria: Hyperlink Navigasi -->
+            <nav class="agnes-menu-navigasi">
+                <ul>
+                    <li><a href="index.html" class="agnes-tombol-navigasi agnes-halaman-aktif">Beranda</a></li>
+                    <li><a href="transaksi.html" class="agnes-tombol-navigasi">Transaksi</a></li>
+                    <li><a href="daftar transaksi.html" class="agnes-tombol-navigasi">Daftar Transaksi</a></li>
+                    <li><a href="profil.html" class="agnes-tombol-navigasi">Profil Aplikasi</a></li>
+                    <li><a href="login.html" class="agnes-tombol-navigasi">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Elemen Semantik: Konten Utama -->
+    <main class="agnes-wadah-konten">
+        <section class="agnes-kartu-putih">
+            <h1>Selamat Datang di Isabella Beauty'Skincare</h1>
+            <p>Temukan rahasia kulit sehat, cerah, dan glowing di sini! Kami menyediakan berbagai macam produk perawatan wajah berkualitas yang aman dan sudah teruji klinis untuk menemani perjalanan *skincare routine* kamu sehari-hari.</p>
+            
+            <hr style="border: 0; border-top: 2px dashed var(--pink-utama); margin: 20px 0;">
+
+            <!-- Kriteria: Menampilkan GAMBAR Skincare -->
+            <h3>🌸 Katalog Produk Terlaris</h3>
+            <p>Berikut adalah koleksi produk kecantikan unggulan kami yang siap bikin kulitmu makin sehat:</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <!-- Cari foto produk skincare estetik di Google/Pinterest, simpan dengan nama skincare.jpg -->
+                <img src="images/produk skincare.jpeg" alt="Katalog Produk Isabella Skincare" style="width: 320px; height: auto; border-radius: 12px; border: 3px solid var(--pink-utama); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+
+            <hr style="border: 0; border-top: 2px dashed var(--pink-utama); margin: 20px 0;">
+
+            <!-- Kriteria: Menampilkan VIDEO & AUDIO HTML5 -->
+            <h3>🌸 Review & Panduan Penggunaan</h3>
+            <p>Tonton video cara pemakaian produk agar hasilnya maksimal dan dengarkan tips kecantikan lewat audio di bawah ini:</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+                <!-- Kotak Video -->
+                <div style="background: var(--bg-pink-lucu); padding: 15px; border-radius: 8px; border: 1px solid var(--pink-utama);">
+                    <h4 style="margin-bottom: 10px;">Video Unboxing & Review</h4>
+                    <!-- Siapkan video skincare pendek di folder dengan nama review.mp4 -->
+                    <video controls style="width: 450px; height: 250px; object-fit: cover; border-radius: 12px; border: 3px solid #ee98b4; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                        <source src="video skincare.mp4" type="video/mp4">
+                        Browser kamu tidak mendukung pemutar video.
+                    </video>
+                </div>
+
+                <!-- Kotak Audio -->
+                <div style="background: var(--bg-pink-lucu); padding: 15px; border-radius: 8px; border: 1px solid var(--pink-utama);">
+                    <h4 style="margin-bottom: 10px;">Audio Tips Kulit Glowing</h4>
+                    <!-- Siapkan audio di folder dengan nama tips.mp3 -->
+                    <audio controls style="width: 100%; margin-top: 15px;">
+                        <source src="audio skincare.ogg" type="audio/mpeg">
+                        Browser kamu tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 2px dashed var(--pink-utama); margin: 20px 0;">
+
+            <!-- Kriteria: Menampilkan LIST -->
+            <h3>🌸 Cara Melakukan Pemesanan Barang</h3>
+            <p>Ikuti 3 langkah mudah ini untuk menginput pesanan skincare kesayanganmu:</p>
+            <ul class="agnes-menu-navigasi" style="display: block; padding-left: 20px; line-height: 1.8;">
+                <li>✨ <strong>Langkah 1:</strong> Masuk terlebih dahulu melalui halaman menu <em>Login</em>.</li>
+                <li>✨ <strong>Langkah 2:</strong> Buka halaman <em>Transaksi</em> untuk memasukkan nama barang, jumlah beli, dan kategori produk.</li>
+                <li>✨ <strong>Langkah 3:</strong> Klik simpan, dan pesanan barang kamu otomatis akan masuk ke dalam tabel riwayat penjualan toko.</li>
+            </ul>
+
+        </section>
+    </main>
+
+    <!-- Elemen Semantik: Footer -->
+    <footer class="agnes-kaki-web">
+        <p>Copyright &copy; 2026 &bull; Designed by Agnes Isabella Uku &bull; All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

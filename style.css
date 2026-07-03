@@ -1,0 +1,199 @@
+:root {
+    --bg-pink-lucu: #fff5f6;
+    --pink-utama: #ffdae0;
+    --pink-tua: #ffb7c5;
+    --strawberry-tombol: #ff7893;
+    --tulisan-gelap: #4a3639;
+    --tulisan-muda: #8a6d71;
+    --putih-bersih: #ffffff;
+    --lengkungan-kotak: 12px;
+    --bayangan-halus: 0 6px 20px rgba(255, 183, 197, 0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--tulisan-gelap);
+}
+
+body {
+    background-color: var(--bg-pink-lucu);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.agnes-kepala-web {
+    background-color: var(--putih-bersih);
+    box-shadow: var(--bayangan-halus);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--pink-utama);
+}
+
+.agnes-wadah-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agnes-nama-aplikasi {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--strawberry-tombol);
+}
+
+.agnes-menu-navigasi ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.agnes-tombol-navigasi {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.agnes-tombol-navigasi:hover {
+    background-color: var(--pink-utama);
+}
+
+.agnes-halaman-aktif {
+    background-color: var(--strawberry-tombol);
+    color: var(--putih-bersih) !important;
+}
+
+.agnes-wadah-konten {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.agnes-kartu-putih {
+    background: var(--putih-bersih);
+    border-radius: var(--lengkungan-kotak);
+    padding: 30px;
+    box-shadow: var(--bayangan-halus);
+    border: 1px solid var(--pink-utama);
+}
+
+h1, h2, h3 {
+    color: var(--tulisan-gelap);
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; border-left: 5px solid var(--strawberry-tombol); padding-left: 10px; }
+
+p {
+    line-height: 1.6;
+    color: var(--tulisan-muda);
+    margin-bottom: 15px;
+}
+
+.agnes-grup-isian {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.agnes-grup-isian label {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.agnes-kotak-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid var(--pink-utama);
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.agnes-kotak-input:focus {
+    outline: none;
+    border-color: var(--strawberry-tombol);
+}
+
+.agnes-tombol-pink {
+    background-color: var(--strawberry-tombol);
+    color: var(--putih-bersih);
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 120, 147, 0.3);
+}
+
+.agnes-tombol-pink:hover {
+    background-color: var(--pink-tua);
+}
+
+.agnes-wadah-tabel {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--pink-utama);
+}
+
+.agnes-tabel-data {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.agnes-tabel-data th {
+    background-color: var(--pink-utama);
+    padding: 12px;
+    font-weight: bold;
+}
+
+.agnes-tabel-data td {
+    padding: 12px;
+    border-bottom: 1px solid var(--pink-utama);
+}
+
+.agnes-tabel-data tr:nth-child(even) {
+    background-color: rgba(255, 218, 224, 0.2);
+}
+
+/* ID yang nyambung dengan JavaScript validasi kamu */
+#kotakError {
+    background-color: #fff0f2;
+    color: #d63031;
+    padding: 10px 15px;
+    border-left: 4px solid #d63031;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: none;
+}
+
+.agnes-kaki-web {
+    background-color: var(--putih-bersih);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8rem;
+    color: var(--tulisan-muda);
+    border-top: 2px solid var(--pink-utama);
+}
+
+@media (max-width: 768px) {
+    .agnes-wadah-header { flex-direction: column; gap: 10px; }
+    .agnes-menu-navigasi ul { flex-wrap: wrap; justify-content: center; }
+}
